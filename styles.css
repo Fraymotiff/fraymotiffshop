@@ -393,8 +393,8 @@ width: 250px;
     z-index: 50px;
     margin-top: 190px;
 margin-left: 310px;
-align-text:center;
-display:flex;
+
+
 }
 
 
@@ -409,8 +409,8 @@ display:flex;
     jusify-content:center;
     position:absolute;
     border:none;
-    z-index: 50px;
-    margin-top: 190px;
+    z-index: 0
+    margin-top: 290px;
 margin-left: 310px;
 transition:1s;
 }
