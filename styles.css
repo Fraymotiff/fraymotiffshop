@@ -14,6 +14,8 @@ scroll-padding-top: 2rem;}
     --second-color:#ffff;
     --text-color:#000;
     --bg-color:#fa5fb1;
+ 
+
 
 }
 /*box shadow*/
@@ -37,3 +39,92 @@ border: radius 5rem;
 
 img {width:100%;}
 section {padding:50px 100px;}
+header{
+    position:fixed;
+width:100%;
+top:0;
+right:0;
+z-index:1000;
+display:flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 100px;
+transition:0.5s linear;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    font-size:1rem;
+    font-weight:600;
+    column-gap:0.2rem;
+    color: var(--text-color);
+
+}
+
+.logo .bx{
+    font-size:24px;
+    color: var(--bg-color)
+
+}
+
+.navbar{
+    display: flex;
+    column-gap: 100px;
+}
+.navbar a {
+    font-size:1rem;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+.navbar a:hover{
+    color: #fda702;
+}
+
+
+li:hover {
+    color: #fda702;}
+
+.header-icons{
+    font-size: 22px;
+    cursor:pointer;
+    z-index: 100000;
+}
+
+#menu-icon{
+    display: none;
+}
+
+.search-box{
+    position: absolute;
+    top:110%;
+    right:-100%;
+
+}
+
+.search-box input{
+    padding:10px;
+border:none;
+outline:none;
+border-radius: 0.5rem;
+width:280px;
+box-shadow: #000
+}
+
+.search-box.active{
+    right:1rem;
+    transition:0.2s;
+
+}
+.user{
+    position: absolute;
+    right: -1rem;
+    top:110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+
+}
