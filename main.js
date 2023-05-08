@@ -1,6 +1,8 @@
 
 
-
+let search = document.getElementById('user').onclick = () =>{
+    search.classList.toggle('userbx.active');
+}
 
 
 
@@ -15,3 +17,5 @@ setInterval( function(){
         contador = 1;
     }
 }, 3000 );
+
+
