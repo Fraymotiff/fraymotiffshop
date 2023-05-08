@@ -5,11 +5,19 @@
     src: url(MotionPicture_PersonalUseOnly.ttf);}
 
 *{ font-family: Quicksand;
-margin:0;
-paddig:0;
+
 box-sizing:border-box;
 list-style: none ;
 text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 80vh;
+    width: 90vw;
+    background-color: rgb(250, 144, 208) ;
 }
 
 :root{
@@ -54,7 +62,8 @@ transition:0.5s linear;
 .navbar{
     display: flex;
     column-gap: 100px;
-    color:var(--text-color)
+    color:var(--text-color);
+background-color: var(--bg-color);
 }
 .navbar a {
     font-size:1rem;
@@ -386,13 +395,12 @@ border: none;
 width: 400px;
     height: 220px;
     z-index: 50px;
-    margin-top: 150px;
-margin-left: 230px;
+
 }
 
 #finder{
     position: absolute;
-    bottom:40%;
+    bottom:30%;
     display: block;
 background: #fff;
 padding: 16px;
@@ -400,7 +408,7 @@ border-radius: 0.5rem;
 box-shadow :rgb(196, 35, 131);
 width: 140px;
 height: 10px;
-margin-left: -95px;
+margin-left: 84px;
 border: none;
 box-shadow: var(--second-color);
 }
@@ -419,126 +427,79 @@ box-shadow: var(--second-color);
 /* CAROUSEL*/
 
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* Hide the images by default */
-
-.mySlides {
-    display: flex;
-    width: 500%;
-    height: 100%;
-}
-
-.mySlides {
-    width: 20%;
-    transition: .6s;
-}
-
-
-/* Next & previous buttons */
-#next {
-    cursor: pointer;
+.container{
+    background-color: #ffffff;
+    width: 60%;
+    min-width: 520px;
     position: absolute;
-    top: 50%;
-    width: auto;
-
-    margin-top: 115px;
-    margin-left: 1100px;
-    padding: 20 10px;
-    color: white;
-    font-weight: bold;
-    padding: 16;
-    font-size: 50px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
- 
+    transform: translate(-50%,-50%);
+    left: 50%;
+    margin-top: 60px;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
-    #prev{
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-    
-        margin-bottom: 240px;
-        margin-right: 200px;
-        padding: 20 10px;
-        color: white;
-        font-weight: bold;
-        font-size: 50px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-     
-  }
-  
-
-
-  
-  /* On hover, add a black background color with a little bit see-through */
-  #prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-#next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
- 
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.image-container{
+    position: relative;
+    width: 90%;
+    margin-left: 44px;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+img{
+    position: relative;
+    width: 100%;
+    display: none;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-    margin-top:500px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  right: 100;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  
+.active{
+    display: block;
 }
-
-.active, .dot:hover {
-  background-color: #717171;
+.dot-container{
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+button{
+    outline: none;
+    cursor: pointer;
 }
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.dot-container button{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid var(--bg-color);
+    background-color: transparent;
 }
-
+.dot-container button:nth-child(1){
+    background-color: #5dace3;
+}
+#prev,#next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #5dace3;
+    color: #ffffff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+#prev{
+    left: 15px;
+}
+#next{
+    right: 15px;
+}
 
 /* carousel*/

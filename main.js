@@ -11,21 +11,45 @@ let user = document.getElementById('#user').onclick = () =>{
 }
 
 
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
 
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1
-  }
+// slider
+let i = 0; // current slide
+let j = 4; // total slides
 
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 2000);
+const dots = document.querySelectorAll(".dot-container button");
+const images = document.querySelectorAll(".image-container img");
+
+function next(){
+    document.getElementById("content" + (i+1)).classList.remove("active");
+    i = ( j + i + 1) % j;
+    document.getElementById("content" + (i+1)).classList.add("active");
+    indicator( i+ 1 );
 }
+
+function prev(){
+    document.getElementById("content" + (i+1)).classList.remove("active");
+    i = (j + i - 1) % j;
+    document.getElementById("content" + (i+1)).classList.add("active");
+    indicator(i+1);
+}
+
+function indicator(num){
+    dots.forEach(function(dot){
+        dot.style.backgroundColor = "transparent";
+    });
+    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec";
+}
+
+function dot(index){
+    images.forEach(function(image){
+        image.classList.remove("active");
+    });
+    document.getElementById("content" + index).classList.add("active");
+    i = index - 1;
+    indicator(index);
+}
+
+//slider
+
+
