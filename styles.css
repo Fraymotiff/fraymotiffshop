@@ -130,10 +130,13 @@ font-size: 30px;
 
     }
 
-    #find{
-        border:none;
-        box-shadow: #000;
+    .find{
+       border: 2px;
+       border-color: var(--second-color);
+       box-shadow: var(--second-color)
         border-radius: 15px;
+        width: 150px;
+        height:30px;
     }
 
 
