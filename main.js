@@ -6,6 +6,12 @@ let search = document.getElementById('user').onclick = () =>{
 
 
 
+let user = document.getElementById('#user').onclick = () =>{
+    search.classList.toggle('active');
+}
+
+
+
 
 let contador = 1;
 
