@@ -15,8 +15,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 80vh;
-    width: 90vw;
+    height: 300vh;
+    width: 80vw;
     background-color: rgb(250, 144, 208) ;
 }
 
@@ -38,7 +38,7 @@ body {
 img {width:100%;}
 section {padding:50px 100px;}
 header{
-    position:fixed;
+    position:absolute;
 width:100%;
 top:0;
 right:0;
@@ -54,6 +54,8 @@ transition:0.5s linear;
    
         width: 110px;
         height:auto;
+        display: block;
+        margin-bottom: 00px;
 
 }
 
@@ -64,13 +66,13 @@ transition:0.5s linear;
     column-gap: 100px;
     color:var(--text-color);
 background-color: var(--bg-color);
+
 }
 .navbar a {
     font-size:1rem;
     font-weight: 500;
     color:var(--text-color)
 }
-
 
 
 
@@ -92,7 +94,7 @@ li:hover {
 #icns{
     color: #fff;
 font-size: 30px;
-
+margin-left: 50px;
     cursor:pointer;
     z-index: 100000;
     color: #fff;
@@ -115,65 +117,6 @@ font-size: 30px;
  
     
 
-
-.userbx{
-    position: absolute;
-    top:110%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 0.5rem;
-background: #fff;
-padding: 20px;
-border-radius: 0.5rem;
-box-shadow :rgb(196, 35, 131);
-right: -210px;
-}
-
-.userbx h2{
-    font-size:1.2rem;
-    color: #ffffff;
-}
-
-.userbx .login-btn{
-    background: var(--bg-color);
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    cursor:pointer;
-
-}
-
-.userbx .login-btn:hover{
-    background: var(--second-color)
-    ;
-}
-
-.userbx input {
-    border: none;
-    outline: none;
-    background:#d6d3d3ed;
-   
-    padding: 10px;
-    border-radius: 0.5rem;
-    width: 100%;
-}
-.userbx p{
-    font-size: 0.938rem;
-
-}
-
-.userbx a {
-    text-decoration: underline;
-    color:var(--main-color)
-}
-.userbx.active{
-    right: 1rem;
-    transition: 0.2s;
-
-
-}
 .home{
     width: 100%;
 min-height: 100vh;
@@ -243,7 +186,7 @@ transition: 0.2s;
     font-size: 20px;
     border-radius: 45px;
     display:flex
-    jusify-content:center;
+    justify-content:center;
     position:absolute;
     border:none;
 
@@ -400,7 +343,7 @@ width: 400px;
 
 #finder{
     position: absolute;
-    bottom:30%;
+    bottom:40%;
     display: block;
 background: #fff;
 padding: 16px;
@@ -408,7 +351,7 @@ border-radius: 0.5rem;
 box-shadow :rgb(196, 35, 131);
 width: 140px;
 height: 10px;
-margin-left: 84px;
+margin-left: -85px;
 border: none;
 box-shadow: var(--second-color);
 }
@@ -424,33 +367,134 @@ box-shadow: var(--second-color);
 }
 
 
+/* USERBOx*/
+
+
+
+
+
+h5 {
+	text-align: center;
+	color: #82807f;
+	margin: 80px auto;
+	font-size: 20px;
+	width: 50%;
+	line-height: 1.7;
+}
+.box {
+	text-align: center;
+}
+.button {
+	
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+color: #fff;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.wrapper {
+margin:120px;
+margin-left:1200px;
+padding: 20px;
+background:#ffff;
+box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+border-radius: 5px;
+width: 300px;
+height: 400px;
+position: relative;
+transition: all 5s ease-in-out;
+text-align: center;
+}
+
+.wrapper .close {
+position: absolute;
+top: 20px;
+right: 30px;
+transition: all 200ms;
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+color: var(--bg-color);
+}
+.wrapper .close:hover {
+color: var(--second-color);
+}
+.wrapper .userbx {
+max-height: 30%;
+overflow: hidden;
+
+}
+/*form*/
+
+
+.userbox  {
+	border-radius: 5px;
+	background-color: #e7e7e7;
+	padding: 20px 0;
+}
+
+
+.form .info-login{
+    display: block;
+    position: absolute;
+    font-family: Quicksand;
+    color: var(--bg-color);
+    text-align: center;
+    font-size:35px;
+    margin-left:28%;
+}
+
+
+
+    
+
+/*form*/
+
+
+
+
+
+/*USERBOX*/
+
+
 /* CAROUSEL*/
 
 
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 .container{
     background-color: #ffffff;
     width: 60%;
-    min-width: 520px;
-    position: absolute;
+    min-width: 920px;
+    position: relative;
+;
     transform: translate(-50%,-50%);
     left: 50%;
-    margin-top: 60px;
+    margin-top: 350px;
     border-radius: 5px;
-    padding: 30px;
+
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    z-index: 0;
+    margin-left: 44px;
+
 }
 .image-container{
     position: relative;
     width: 90%;
     margin-left: 44px;
+    z-index: ;
 }
 img{
     position: relative;
@@ -479,7 +523,7 @@ button{
     background-color: transparent;
 }
 .dot-container button:nth-child(1){
-    background-color: #5dace3;
+    background-color: var(--bg-color);
 }
 #prev,#next{
     height: 40px;
@@ -503,3 +547,5 @@ button{
 }
 
 /* carousel*/
+
+
