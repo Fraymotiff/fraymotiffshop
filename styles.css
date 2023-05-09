@@ -567,6 +567,7 @@ margin-top:140px;
   .slide img{
     width: 800px;
     height: 500px;
+    margin-top:80px
   }
   
   /*css for manual slide navigation*/
@@ -574,7 +575,7 @@ margin-top:140px;
   .navigation-manual{
     position: absolute;
     width: 800px;
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
   }
@@ -695,7 +696,7 @@ margin-top: 50px;
 
 
 .card {
-  margin-top: 50px;
+  margin-top: 100px;
   height: 300px;
   width:300px;
   background-size: cover;
