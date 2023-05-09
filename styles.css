@@ -619,8 +619,8 @@ margin-top:140px;
     display: flex;
     width: 800px;
     justify-content: center;
-
 display:none;
+ 
   }
   
   .navigation-auto div{
@@ -653,3 +653,92 @@ display:none;
   }
         
 /*carousel/
+
+/*info*/
+.slide div{
+width: 250px;
+height: 250px;
+background-color:rgb(250, 144, 208);
+position: absolute;
+margin-top: -400px;
+margin-left: 200px;
+}
+.slide button{
+
+}
+
+/* PRODUCT TYPE*/
+
+.characters-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+ 
+  
+}
+
+.product-types {
+
+display: grid;  
+grid-template-columns: repeat(3, 1fr);
+row-gap: 20px;
+column-gap: 40px;
+width: 100px;
+height:auto;
+
+height: 100px;
+width:100%;
+margin-top: 50px;
+}
+
+
+.card {
+  margin-top: 50px;
+  height: 300px;
+  width:300px;
+  background-size: cover;
+  background-position:  50% 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  color:  var(--second-color);
+  font-size: 17px;
+  text-align: center;
+  font-family: 'Kdam Thmor Pro',sans-serif;
+  display: block;
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.banner1 {
+  background-image: url('./placeholder\ pic.png');
+}
+
+.banner2 {
+  background-image: url('./placeholder\ pic.png');
+
+}
+.banner3 {
+  background-image: url('./placeholder\ pic.png');
+}
+
+.banner4 {
+  background-image: url('./placeholder\ pic.png');
+}
+
+.banner5 {
+  background-image: url('./placeholder\ pic.png');
+}
+
+.banner6 {
+  background-image: url('./placeholder\ pic.png');
+}
+
