@@ -1,55 +1,101 @@
 
 
-let search = document.getElementById('user').onclick = () =>{
-    search.classList.toggle('userbx.active');
-}
 
+  //ORTHER TRY
 
+  const sliderImages = [
+    "./images/image1.jpg",
+    "./images/image2.jpg",
+    "./images/image3.jpg",
+    "./images/image4.jpg",
+];
+const sliderDom = document.getElementById("mySlides");
 
-let user = document.getElementById('#user').onclick = () =>{
-    search.classList.toggle('active');
-}
+let currentImage = 0;
 
-
-
-
-// slider
-let i = 0; // current slide
-let j = 4; // total slides
-
-const dots = document.querySelectorAll(".dot-container button");
-const images = document.querySelectorAll(".image-container img");
-
-function next(){
-    document.getElementById("content" + (i+1)).classList.remove("active");
-    i = ( j + i + 1) % j;
-    document.getElementById("content" + (i+1)).classList.add("active");
-    indicator( i+ 1 );
-}
-
-function prev(){
-    document.getElementById("content" + (i+1)).classList.remove("active");
-    i = (j + i - 1) % j;
-    document.getElementById("content" + (i+1)).classList.add("active");
-    indicator(i+1);
-}
-
-function indicator(num){
-    dots.forEach(function(dot){
-        dot.style.backgroundColor = "transparent";
+function renderImages() {
+    sliderImages.forEach((image) => {
+        sliderDom.innerHTML += "<img src='" + image + "' />";
     });
-    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec";
 }
 
-function dot(index){
-    images.forEach(function(image){
-        image.classList.remove("active");
+function clearImages() {
+    const images = document.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.opacity = 0;
+    }
+}
+
+function showImage(image) {
+    clearImages();
+    document.getElementsByTagName("img")[image].style.opacity = 1;
+}
+
+function init() {
+    renderImages();
+    showImage(currentImage);
+}
+
+init();
+
+let myBtn = document.querySelector("#prevButton");
+
+myBtn.onclick = function() {
+    const newImage = (currentImage + 1) % sliderImages.length;
+
+    showImage(newImage);
+}
+let myBtn2 = document.querySelector("#nextButton");
+
+myBtn2.onclick = function() {}
+    const newImage = (currentImage + 1) % sliderImages.length;
+    showImage(newImage);
+const sliderImages = 
+    "./image1.jpg"
+    "./image2.jpg"
+"./image3.jpg"    
+const sliderDom = document.getElementById("");
+
+let currentImage = 0;
+
+function renderImages() {
+    sliderImages.forEach((image) => {
+        sliderDom.innerHTML += "<img src='" + image + "' />";
     });
-    document.getElementById("content" + index).classList.add("active");
-    i = index - 1;
-    indicator(index);
+}
+
+function clearImages() {
+    const images = document.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.opacity = 0;
+    }
+}
+
+function showImage(image) {
+    clearImages();
+    document.getElementsByTagName("img")[image].style.opacity = 1;
+}
+
+function init() {
+    renderImages();
+    showImage(currentImage);
+}
+
+init();
+
+let myBtn = document.querySelector("#prevButton");
+
+myBtn.onclick = function() {
+    const newImage = (currentImage + 1) % sliderImages.length;
+
+    showImage(newImage);
+}
+let myBtn2 = document.querySelector("#nextButton");
+
+myBtn2.onclick = function() {
+    const newImage = (currentImage + 1) % sliderImages.length;
+    showImage(newImage);
 }
 
 //slider
-
 
