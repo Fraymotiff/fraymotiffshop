@@ -657,14 +657,33 @@ display:none;
 
 /*info*/
 .slide div{
-width: 250px;
+width: 350px;
 height: 250px;
 background-color:rgb(250, 144, 208);
 position: absolute;
 margin-top: -400px;
-margin-left: 200px;
+margin-left: 220px;
+text-align: center;
+font-family: Quicksand;
+font-size: 24px;
+color:#fff;
+display:block;
 }
-.slide button{
+.slide .butn{
+
+  background-color:rgb(255, 255, 255);
+  position: absolute;
+  display: block;
+  margin-top: -250px;
+  margin-left: 21%;
+  margin:5px
+  text-align: center;
+  font-family: Quicksand;
+  border-radius: 15px;
+  font-size: 20px;
+  color:var(--bg-color);
+  width: 130px;
+  height:50px;
 
 }
 
