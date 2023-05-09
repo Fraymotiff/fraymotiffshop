@@ -11,12 +11,16 @@ list-style: none ;
 text-decoration: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 300vh;
-    width: 80vw;
+
+
+* { margin :0;
+}
+body { height: 100vh;
+    width: 300; 
+  
+ 
+    
+    
     background-color: rgb(250, 144, 208) ;
 }
 
@@ -716,7 +720,7 @@ row-gap: 20px;
 column-gap: 40px;
 width: 100px;
 height:auto;
-
+position:relative
 height: 100px;
 width:100%;
 margin-top: 50px;
@@ -770,4 +774,24 @@ margin-top: 50px;
 .banner6 {
   background-image: url('./placeholder\ pic.png');
 }
+
+
+
+footer {
+  height: 300px;
+position: absolute;
+background-color: #fff;
+color: var(--second-color);
+
+}
+span{
+
+  color:var(--second-color);
+  font-family: 'Quicksand';
+  align-items: center;
+
+}
+
+
+
 
