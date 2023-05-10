@@ -876,40 +876,48 @@ span{
 
   .buttons {
     position: relative;
-    padding-top: 30px;
+    padding-top: 60px;
     margin-right: 60px;
+  
   }
   
   #delete-btn {
-  
-
+    position: relative;
+   font-size: 25px;
     Cursor: pointer;
-    font-size:25px;
-    margin-left: 360;
+    margin-top:40px;
   }
    
   #like-btn {
-    position: absolute;
-margin-left: 360;
-  
-    font-size:25px;
-    background: url('twitter-heart.png');
- 
-    background-size: 2900%;
-   
+position: absolute;
+font-size: 20px;
+margin-top: 2px;
     Cursor: pointer;
+    margin-top:41px;
   }
+
+  .is-active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+  }
+   
+  @keyframes animate {
+    0%   { background-position: left;  }
+    50%  { background-position: right; }
+    100% { background-position: right; }
+  }
+
   .image {
     margin-right: 50px;
-    position: absolute;
-    width: 100px;
-    height: auto;
   }
-   
+
   .description {
     padding-top: 10px;
-    margin-right: 60px;
-    width: 115px;
+    margin-left: 140px;
+
   }
    
   .description span {
@@ -931,6 +939,7 @@ margin-left: 360;
   .quantity {
     padding-top: 20px;
     margin-right: 60px;
+    row-gap: 5px;
   }
   .quantity input {
     -webkit-appearance: none;
@@ -949,12 +958,17 @@ margin-left: 360;
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    margin-left: 20px;
   }
-  .minus-btn img {
-    margin-bottom: 3px;
+  .minus-btn  {
+    margin-bottom: 5px;
+    position:absolute;
   }
-  .plus-btn img {
+  #plus-btn  {
     margin-top: 2px;
+    display:overlay
+    margin-top: 4px;
+    position:absolute;
   }
    
   button:focus,
@@ -963,10 +977,11 @@ margin-left: 360;
   }
 
   .total-price {
-    width: 83px;
     padding-top: 27px;
+    margin-left: 10px;
     text-align: center;
     font-size: 16px;
     color: #43484D;
     font-weight: 300;
+    margin-left: 138px;
   }
