@@ -1044,29 +1044,7 @@ span{
 
 
 /*PRODUCTS*/
-.characters-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
 
- 
-  
-}
-
-.grid{
-
-display: grid;  
-grid-template-columns: repeat(3, 3fr);
-row-gap: 20px;
-column-gap: 40px;
-width: 100px;
-height:auto;
-position:relative
-height: 100px;
-width:100%;
-margin-top: 50px;
-}
 
 
 .card {
@@ -1086,6 +1064,7 @@ margin-top: 50px;
   text-align: center;
   font-family: 'Kdam Thmor Pro',sans-serif;
   display: block;
+  
 }
 
 
@@ -1093,38 +1072,80 @@ margin-top: 50px;
   transform: scale(1.02);
 }
 
-.banner1 {
-  background-image: url('./placeholder\ pic.png');
-}
-
-.banner2 {
-  background-image: url('./placeholder\ pic.png');
-
-}
-.banner3 {
-  background-image: url('./placeholder\ pic.png');
-}
-
-.banner4 {
-  background-image: url('./placeholder\ pic.png');
-}
-
-.banner5 {
-  background-image: url('./placeholder\ pic.png');
-}
-
-.banner7 {
-  background-image: url('./placeholder\ pic.png');
-}
 
 /*////*//*
 
 */
-.t{
-  color: #e80000;
+ .txt1 {
+  color: #ffff;
   display: flex;
-  justify-content: center;
-  float: bottom;
+ margin-left: 80px;
+ cursor:pointer;
 }
 
 
+
+.price1{
+  color: #ffff;
+  display: flex;
+ margin-left: 100px;
+ cursor: pointer;
+
+}
+
+.price1:hover{
+  color: var(--second-color);
+  display: flex;
+ 
+ text-decoration: underline;
+}
+
+.txt1:hover{
+  color: var(--second-color);
+  display: flex;
+ text-decoration: underline;
+}
+
+.grid {
+float: left;}
+  
+  .card {
+    margin-top: 100px;
+    height: 250px;
+    width:250px;
+    background-size: cover;
+    background-position:  50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    color:  var(--second-color);
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro',sans-serif;
+    display: block;
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.02);}
+
+    .prod1{
+      float:left;
+      
+    }
+
+    .prod2{
+      float:left;
+      margin-left: 30px;
+     
+    
+    }
+
+    .prod3{
+      float:left;
+      margin-left: 30px;
+ 
+    }
