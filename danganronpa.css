@@ -1096,7 +1096,7 @@ span{
 .price1:hover{
   color: var(--second-color);
   display: flex;
- 
+
  text-decoration: underline;
 }
 
@@ -1104,15 +1104,16 @@ span{
   color: var(--second-color);
   display: flex;
  text-decoration: underline;
+
 }
 
 .grid {
 float: left;}
   
-  .card {
-    margin-top: 100px;
-    height: 250px;
-    width:250px;
+.card {
+  margin-top: 100px;
+  height: 250px;
+  width:250px;
     background-size: cover;
     background-position:  50% 50%;
     border-radius: 5px;

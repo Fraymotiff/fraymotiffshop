@@ -1120,3 +1120,174 @@ span{
 a {
   display: block;
 }
+
+
+
+
+.price1{
+  color: #ffff;
+  display: flex;
+ margin-left: 100px;
+ cursor: pointer;
+
+}
+
+.price1:hover{
+  color: var(--second-color);
+  display: flex;
+ 
+ text-decoration: underline;
+}
+
+.txt1:hover{
+  color: var(--second-color);
+  display: flex;
+ text-decoration: underline;
+}
+
+.grid {
+float: left;}
+  
+  .card {
+    margin-top: 100px;
+    height: 250px;
+    width:250px;
+    background-size: cover;
+    background-position:  50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    color:  var(--second-color);
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro',sans-serif;
+    display: block;
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.02);}
+
+    .prod1{
+      float:left;
+      
+    }
+
+    .prod2{
+      float:left;
+      margin-left: 30px;
+     
+    
+    }
+
+    .prod3{
+      float:left;
+      margin-left: 30px;
+ 
+    }
+
+    
+.grid2 {
+  margin-bottom: 150px;
+  float: left;}
+
+  .txt1:hover{
+    color: var(--second-color);
+    display: flex;
+
+  
+  }
+
+  .txt1 {
+    color: #ffff;
+    display: flex;
+   margin-left: 60px;
+   cursor:pointer;
+font-size: 20px;
+  }
+  
+  .txt3:hover{
+    color: var(--second-color);
+    display: flex;
+
+  }
+
+  .txt3 {
+    color: #ffff;
+    display: flex;
+   margin-left: 15px;
+   cursor:pointer;
+font-size: 20px;
+  }
+
+  .txt4:hover{
+    color: var(--second-color);
+    display: flex;
+
+  }
+
+  .txt4 {
+    color: #ffff;
+    display: flex;
+   margin-left: 75px;
+   cursor:pointer;
+font-size: 20px;
+  }
+  .txt5:hover{
+    color: var(--second-color);
+    display: flex;
+
+  }
+
+  .txt5 {
+    color: #ffff;
+    display: flex;
+   margin-left: 35px;
+   cursor:pointer;
+font-size: 20px;
+  }
+
+  .txt6:hover{
+    color: var(--second-color);
+    display: flex;
+
+  }
+
+  .txt6 {
+    color: #ffff;
+    display: flex;
+   margin-left: 95px;
+   cursor:pointer;
+font-size: 20px;
+  }
+
+  .txt7:hover{
+    color: var(--second-color);
+    display: flex;
+
+  }
+
+  .txt7 {
+    color: #ffff;
+    display: flex;
+   margin-left: 25px;
+   cursor:pointer;
+font-size: 20px;
+  }
+
+  .txt9:hover{
+    color: var(--second-color);
+    display: flex;
+
+  }
+
+  .txt9 {
+    color: #ffff;
+    display: flex;
+   margin-left: 95px;
+   cursor:pointer;
+font-size: 20px;
+  }
