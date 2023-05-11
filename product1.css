@@ -103,7 +103,6 @@ margin-left: 50px;
     cursor:pointer;
     z-index: 100000;
     color: #fff;
-    display:flex
 
    
 
@@ -727,22 +726,10 @@ cursor:pointer
   
 }
 
-.product-types {
-
-display: grid;  
-grid-template-columns: repeat(3, 3fr);
-row-gap: 20px;
-column-gap: 40px;
-width: 100px;
-height:auto;
-position:relative
-height: 100px;
-width:100%;
-margin-top: 50px;
-}
 
 
-.card {
+
+.IMG-PRD {
   margin-top: 100px;
   height: 300px;
   width:300px;
@@ -754,10 +741,10 @@ margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content:flex-end;
-  color:  var(--second-color);
+
   font-size: 17px;
   text-align: center;
-  font-family: 'Kdam Thmor Pro',sans-serif;
+
   display: block;
 }
 
@@ -789,6 +776,9 @@ margin-top: 50px;
 .banner6 {
   background-image: url('./placeholder\ pic.png');
 }
+
+
+
 
 
 
@@ -892,16 +882,7 @@ span{
   color: #000;
   margin: 0 0 5px 0;
 }
-#qty{
-  width: 62px;
-  height: 42px;
-  padding: 10px 7px;
-  border-radius: 5px;
-  position: ;
 
-  border:1px solid rgb(192, 221, 235);
-  font-size: 14px;
-}
 .brandName{
   height: 40px;
   padding: 10px 7px;
@@ -926,10 +907,6 @@ span{
   text-decoration: none;
   margin-bottom: 20px;
 }
-
-
- 
-
 .checkout{
   width: 254px;
   height: 62px;
@@ -944,9 +921,12 @@ span{
   line-height: 32px;
   font: normal 15px 'Open Sans', Arial, Helvetica, sans-serif;
   color: #fff;
-  display: inline-block;
+position:absolute;
   text-align: center;
   text-decoration: none;
+
+ 
+
 }
 
 
@@ -1115,8 +1095,3 @@ span{
 
 
 /*CART*/
-
-
-a {
-  display: block;
-}
