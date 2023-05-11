@@ -792,14 +792,7 @@ margin-top: 50px;
 
 
 
-footer {
-  position: relative;
-  height: 300px;
-  margin-top:0;
-background-color: #fff;
-color: var(--second-color);
 
-}
 span{
 
   color:var(--second-color);
@@ -1292,22 +1285,7 @@ font-size: 20px;
 font-size: 20px;
   }
 
-  footer-title, .info{
-    color: rgba(255, 255, 255, 0.75);
-    margin: 20px 0;
-    text-transform: capitalize;
-}
-
-.footer-title{
-    margin-top: 80px;
-    color: #fff;
-}
-
-.footer-social-container{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-}
+  
 
 .social-link{
     color: #fff;
