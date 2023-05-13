@@ -137,4 +137,21 @@ $(document).ready(function () {
         input.val(value);
       })
     });
+
+    ///
+    const button = document.getElementsByClassName(".addtocart");
+    const done = document.getElementsByClassName(".done");
+    console.log(button);
+    let added = false;
+    button.addEventListener('click',()=>{
+      if(added){
+        done.style.transform = "translate(-110%) skew(-40deg)";
+        added = false;
+      }
+      else{
+        done.style.transform = "translate(0px)";
+        added = true;
+      }
+        
+    });
     

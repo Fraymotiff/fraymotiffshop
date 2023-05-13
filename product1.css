@@ -94,30 +94,32 @@ li:hover {
 
 
 
-
-
 #icns{
-    color: #fff;
+color: #fff;
 font-size: 30px;
 margin-left: 50px;
     cursor:pointer;
     z-index: 100000;
     color: #fff;
-
+    position:relative;
+    display:flex
+}
    
 
-  }
-  #icn-srch{
-      color: #fff;
-  font-size: 30px;
-  
-      cursor:pointer;
-      
-      color: #fff;
-  margin-top: 2px;
-     
-  
-      }
+    
+    #icn-srch{
+        color: #fff;
+    font-size: 30px;
+    
+        cursor:pointer;
+        
+        color: #fff;
+    margin-top: 2px;
+       
+    
+        }
+
+ 
 
  
     
@@ -1186,13 +1188,13 @@ position:absolute;
 /* custom style */
 .picZoomer-pic-wp,
 .picZoomer-zoom-wp{
-    border: 1px solid #eee;
+    border: 1px solid #ffffff;
 }
 
 
 
 .section-bg {
-    background-color: #fff1e0;
+    background-color: #ffffff;
 }
 section {
     padding: 60px 0;
@@ -1215,7 +1217,7 @@ section {
     top: 0px;
 }
 ._boxzoom ._product-images {
-    width: 80%;
+    width: 100%;
     display: inline-block;
 }
 ._boxzoom ._product-images .picZoomer {
@@ -1243,7 +1245,6 @@ section {
 margin-top: -570px;
 position:relative;}
   
-/*https://codepen.io/creativesunil/pen/NWGojvM*/
 
 h1 {
   font-size: 45px;
@@ -1317,5 +1318,74 @@ color:var(--second-color);
   color: #fff;
 }
 
+.desc{
+  color:#fff;
+  font-family: Quicksand;
+  font-size: 25px;
+}
+
+/**/
+
+
+
+.addtocart{
+  display:block;
+  padding:0.5em 1em 0.5em 1em;
+  border-radius:100px;
+  border:none;
+  font-size:2em;
+  position:relative;
+  background:var(--second-color)
+  height:200px;
+  width:10em;
+  overflow:hidden;
+  transition:transform 0.1s;
+  z-index:1;
+}
+.addtocart:hover{
+  transform:scale(1.1);
+  cursor:pointer;
+}
+.pretext{
+  color:#fff;
+  background:var(--second-color);
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Quicksand', sans-serif;
+}
+i{
+  margin-right:10px;
+}
+.done{
+  background:#fff;
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  transition:transform 0.3s ease;
+
+  transform:translate(-110%) skew(-40deg);
+}
+.posttext{
+  background:#fff;
+}
+.fa-check{
+  background:var(--bg-color);
+}
+
 /*https://codepen.io/creativesunil/pen/NWGojvM*/
 /*https://codepen.io/vadim_pashaev_/pen/MqBjpL
+/*https://codepen.io/ankushc/pen/ReQJrg
+/* FIX BUTTON PLUS MINUS
+FIX DISTORTED BUTTONS
+FIX ICNS HEADER
+REWATCH JAVASCRIPT CLASSES
+/*https://freefrontend.com/tailwind-forms/
+/*https://tailwindcomponents.com/component/shipping-label-address-form
+/*FIND CART BUTTON
