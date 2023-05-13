@@ -1240,8 +1240,37 @@ section {
   width: 600px;
   height: 600px;
   margin-left: 900px;
-margin-top: -700px;
+margin-top: -570px;
 position:relative;}
   
 /*https://codepen.io/creativesunil/pen/NWGojvM*/
 
+h1 {
+  font-size: 45px;
+}
+
+.select-opt{
+  width: 300px;
+  height: 40px;
+  padding: 10px 7px;
+  border-radius: 5px;
+  border:1px solid rgb(192, 221, 235);
+  font-size: 14px;
+  text-align: center;
+font-family: Quicksand;
+color:var(--second-color);
+
+}
+
+#qty{
+  width: 90px;
+  height: 40px;
+  padding: 10px 7px;
+  border-radius: 5px;
+  border:1px solid rgb(192, 221, 235);
+  font-size: 14px;
+  font-family: Quicksand;
+color:var(--second-color);
+  text-align: center;
+  display:block;
+}
