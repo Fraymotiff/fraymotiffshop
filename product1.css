@@ -1262,15 +1262,60 @@ color:var(--second-color);
 
 }
 
-#qty{
+
+
+
+
+.quantity {
+  display: flex;
+
+  padding: 0;
+}
+.quantity__minus,
+.quantity__plus {
+  display: block;
+  width: 42px;
+  height: 40px;
+  margin: 0;
+  background: #f2f2f2;
+  text-decoration: none;
+  text-align: center;
+  line-height: 29px;
+  color: var(--second-color);
+  padding: 20;
+}
+.quantity__minus:hover,
+.quantity__plus:hover {
+  background:var(--second-color);
+  color: #fff;
+} 
+.quantity__minus {
+  border-radius: 3px 0 0 3px;
+}
+.quantity__plus {
+  border-radius: 0 3px 3px 0;
+}
+.quantity__input {
   width: 90px;
   height: 40px;
   padding: 10px 7px;
   border-radius: 5px;
-  border:1px solid rgb(192, 221, 235);
+  border:1px solid var(--second-color);
   font-size: 14px;
   font-family: Quicksand;
 color:var(--second-color);
   text-align: center;
   display:block;
+
 }
+.quantity__minus:link,
+.quantity__plus:link {
+  color: #8184a1;
+} 
+.quantity__minus:visited,
+.quantity__plus:visited {
+  color: #fff;
+}
+
+/*https://codepen.io/creativesunil/pen/NWGojvM*/
+/*https://codepen.io/vadim_pashaev_/pen/MqBjpL
