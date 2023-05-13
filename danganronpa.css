@@ -106,20 +106,18 @@ margin-left: 50px;
     display:flex
 
    
-
-    }
-    #icn-srch{
-        color: #fff;
-    font-size: 30px;
-    
-        cursor:pointer;
-        z-index: 100000;
-        color: #fff;
-    
-       
-    
-        }
-
+  }
+  #icn-srch{
+      color: #fff;
+  font-size: 30px;
+  
+      cursor:pointer;
+      
+      color: #fff;
+  margin-top: 2px;
+     
+  
+      }
  
     
 

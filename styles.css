@@ -103,6 +103,7 @@ margin-left: 50px;
     cursor:pointer;
     z-index: 100000;
     color: #fff;
+    position:relative;
     display:flex
 
    
@@ -113,9 +114,9 @@ margin-left: 50px;
     font-size: 30px;
     
         cursor:pointer;
-        z-index: 100000;
+        
         color: #fff;
-    
+    margin-top: 2px;
        
     
         }
