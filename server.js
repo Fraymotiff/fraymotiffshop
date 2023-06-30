@@ -6,10 +6,28 @@ http.createServer(function (req, res) {
 }).listen(8080);
 
 // importing packages
+var admin = require("firebase-admin");
 const express = require('express');
 const admin = require('firebase-admin');
 const bcrypt = require('bcrypt');
 const path = require('path');
+
+
+//firebase admin setup
+
+
+
+
+let serviceAccount = require("./fraymotiff-shop-signin-firebase-adminsdk-t6fd7-b6db7f73cf.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
+let db = admin.firestore();
+///
+
+
 
 // declare static path
 let staticPath = path.join(__dirname, "public");
@@ -68,7 +86,116 @@ app.post('/signup', (req, res) => {
     } else if(!tac){
         return res.json({'alert': 'you must agree to our terms and conditions'});
     }       
+
+//store in db
+// store user in db
+db.collection('users').doc(email).get()
+.then(user => {
+    if(user.exists){
+        return res.json({'alert': 'email already exists'});
+    } else{
+        // encrypt the password before storing it.
+        bcrypt.genSalt(10, (err, salt) => {
+            bcrypt.hash(password, salt, (err, hash) => {
+                req.body.password = hash;
+                db.collection('users').doc(email).set(req.body)
+                .then(data => {
+                    res.json({
+                        name: req.body.name,
+                        email: req.body.email,
+                        seller: req.body.seller,
+                    })
+                })
+            })
+        })
+    }
 })
+db.collection('users').doc(email).get()
+.then(...)
+if(user.exists){
+    return res.json({'alert': 'email already exists'});
+} else{
+    // encrypt the password before storing it.
+    bcrypt.genSalt(10, (err, salt) => {
+        bcrypt.hash(password, salt, (err, hash) => {
+            req.body.password = hash;
+            db.collection('users').doc(email).set(req.body)
+            .then(data => {
+                res.json({
+                    name: req.body.name,
+                    email: req.body.email,
+                    seller: req.body.seller,
+                })
+            })
+        })
+    })
+}
+
+const processData = (data) => {
+    loader.style.display = null;
+    if(data.alert){
+        showAlert(data.alert);
+    } else if(data.name){
+        // create authToken
+        data.authToken = generateToken(data.email);
+        sessionStorage.user = JSON.stringify(data);
+        location.replace('/');
+    }
+}
+
+const processData = (data) => {
+    loader.style.display = null;
+    if(data.alert){
+        showAlert(data.alert);
+    } else if(data.name){
+        // create authToken
+        data.authToken = generateToken(data.email);
+        sessionStorage.user = JSON.stringify(data);
+        location.replace('/');
+    }
+}
+
+let char = `123abcde.fmnopqlABCDE@FJKLMNOPQRSTUVWXYZ456789stuvwxyz0!#$%&ijkrgh'*+-/=?^_${'`'}{|}~`;
+
+const generateToken = (key) => {
+    let token = '';
+    for(let i = 0; i < key.length; i++){
+        let index = char.indexOf(key[i]) || char.length / 2;
+        let randomIndex = Math.floor(Math.random() * index);
+        token += char[randomIndex] + char[index - randomIndex];
+    }
+    return token;
+}
+
+const compareToken = (token, key) => {
+    let string = '';
+    for(let i = 0; i < token.length; i=i+2){
+        let index1 = char.indexOf(token[i]);
+        let index2 = char.indexOf(token[i+1]);
+        string += char[index1 + index2];
+    }
+    if(string === key){
+        return true;
+    }
+    return false;
+}
+
+// redirect to home page if user logged in
+window.onload = () => {
+    if(sessionStorage.user){
+        user = JSON.parse(sessionStorage.user);
+        if(compareToken(user.authToken, user.email)){
+            location.replace('/');
+        }
+    }
+}
+
+
+
+
+})
+
+
 
 let { name, email, password, number, tac, notification } = req.body;
 
