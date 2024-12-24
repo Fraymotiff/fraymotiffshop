@@ -80,10 +80,15 @@ transition:0.5s linear;
 }
 
 
+a {
+  list-style: none;
+  cursor: pointer;
+  transition: .5s;
 
+}
 
-li:hover {
-    color: var(--second-color)}
+a:hover {
+    color: rgb(159, 19, 124)}
 
 
 
