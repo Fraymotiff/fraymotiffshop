@@ -21,13 +21,13 @@ body { height: 100vh;
  
     
     
-    background-color: rgb(250, 144, 208) ;
+    background-color:   #5dace3;
 }
 
 :root{
-    --main-color: rgb(196, 35, 131);
-    --second-color:rgb(196, 35, 131);
-    --bg-color:rgb(250, 144, 208);
+    --main-color: rgb(40, 35, 196);
+    --second-color:rgb(35, 62, 196);
+    --bg-color:rgb(118, 195, 239);
  --text-color: #fff;
  --blue-color: #5dace3;
 
@@ -88,7 +88,7 @@ a {
 }
 
 a:hover {
-    color: rgb(159, 19, 124)}
+    color: rgb(19, 28, 159)}
 
 
 
