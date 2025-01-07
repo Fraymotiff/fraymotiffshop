@@ -1180,6 +1180,8 @@ bottom:5em;
 .box1 {
 
   color: #ffff;
+  margin-bottom:80em;
+margin-left: 50em;
 }
   
 h1 {
@@ -1230,6 +1232,7 @@ color:var(--second-color);
   overflow:hidden;
   transition:transform 0.1s;
   z-index:1;
+  margin-bottom: 50px;
 }
 .addtocart:hover{
   transform:scale(1.1);
@@ -1268,6 +1271,9 @@ i{
   background:var(--bg-color);
 }
 
+.procuct{
+  display: inline-block
+}
 
 /* QTY INPUT */
 
