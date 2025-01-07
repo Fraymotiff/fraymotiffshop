@@ -20,6 +20,15 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Item Viewer CSS -->
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- Item Viewer Js -->
+<script src="js/viewer.js"></script>
+<script src="./product.js"></script>
         <title> Fraymotiff Shop</title>    
     </head>
     <body>
@@ -27,13 +36,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
         <header>
             <img src="./logo logo 123.png" alt="" class="logo">
         
-            <ul class="navbar">
-                <li><a href="#home"></a> Home </li>
-                <li><a href="#all"></a> Shop All</li>
-                <li><a href="#new"></a> FAQ + Shipping</li>
-                <li><a href="#home"></a> about </li>
-                <li><a href="#home"></a> Contact </li>
-                <li><a href="#home"></a> Reviews </li>
+        
+				<ul class="navbar">
+					<li><a href="#home"></a> Home </li>
+					<li><a href="#all"></a> Shop All</li>
+					<li><a href="./faq.html"> FAQ + Shipping</a></li>
+					<li><a href="./about.html">about</a>  </li>
+					<li><a href="./contact.html"> Contact </a></li>
+					<li><a href="./reviews.html"></a> Reviews</a>  </li>
 
                 <div class="find ">  <input type="search" name="" id="finder" placeholder="Search Here..."></div>
             </ul>
@@ -225,33 +235,59 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
 <!--CART-->
      
 
-      </div>
+
     </div>
     </div>
 
 	<!--PRODUCT-->
-			
-	<div class="row row-sm">
-		<div class="col-md-6 _boxzoom">
-		   <div class="zoom-thumb">
-			  <ul class="piclist">
-				 <li><img src="https://s.fotorama.io/1.jpg" alt=""></li>
-				 <li><img src="https://s.fotorama.io/2.jpg" alt=""></li>
-				 <li><img src="https://s.fotorama.io/3.jpg" alt=""></li>
-				 <li><img src="https://ucarecdn.com/382a5139-6712-4418-b25e-cc8ba69ab07f/-/stretch/off/-/resize/760x/" alt=""></li>
-			  </ul>
-		   </div>
-		   <div class="_product-images">
-			  <div class="picZoomer">
-				 <img class="my_img" src="./placeholder pic.png" alt="">
-			  </div>
-		   </div>
-		</div>
-			  
+		
+	
+	<!--PRODUCT IMAGES -->
+	
 
+	
+	
+	
+	<!-- The four columns -->
+
+
+	
+	<div class="row">
+	  <div class="column">
+		<img src="./product1.png" alt="Photo of a keychain of bill cipher from gravity falls with a golden clasp in a pink felt backgound" style="width:100%" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+		<img src="./placeholder pic.png" alt=" Image with white background and baby pink letters written placeholder pic" style="width:100%" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+		<img src="./product1.png" alt="Photo of a keychain of bill cipher from gravity falls with a golden clasp in a pink felt backgound" style="width:100%" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+		<img src="./placeholder pic.png" alt=" Image with white background and baby pink letters written placeholder pic" style="width:100%" onclick="myFunction(this);">
+	  </div>
+	</div>
+	
+	<div class="container">
+	  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	  <img id="expandedImg" style="width:100%">
+	  <div id="imgtext"></div>
+	</div>
+	
+	<script>
+	function myFunction(imgs) {
+	  var expandImg = document.getElementById("expandedImg");
+	  var imgText = document.getElementById("imgtext");
+	  expandImg.src = imgs.src;
+	  imgText.innerHTML = imgs.alt;
+	  expandImg.parentElement.style.display = "block";
+	}
+	</script>
+<!-- PRODUCT IMAGES -->
 			  <!--PRODUCT INFO-->
 <div>
-	<div class="box1"><h1 class="title">ITEM TITLE</h1>
+	<div class="box1">
+		
+		<h1 class="title">ITEM TITLE</h1>
 <p class="">Reviews link</p>
 <br>
 <p><b>$2.00</b></p>
@@ -271,16 +307,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
 <br><br>
 </td>
 <p>Qty</p>
-<br>
 
 
-<div class="quantity">
-    <a href="#" class="quantity__minus"><span>-</span></a>
-    <input name="quantity" type="text" class="quantity__input" value="1" min="1"  onkeydown="javascript:preventInput(less than 1);" onpaste="return false;"
-	TabIndex="1">
-    <a href="#" class="quantity__plus"><span>+</span></a>
 
-	<br>
+
+
 </div>
 
 <br>
@@ -294,11 +325,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
 	</div>
 	
   </button>
-			 
+</div>
 
 			 
 
-	<!--PRODUCT-->
+
 
 <!--COSTUMER REVIEWS-->
 <!--COSTUMER REVIEWS-->

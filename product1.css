@@ -1108,16 +1108,80 @@ position:absolute;
 
 /* PRODUCT INFO*/
 
+/* PRODUCT IMAGES */
+/* The grid: Four equal columns that floats next to each other column */
+.column {
+
+  flex-direction: column;
+  width: 15%;
+  padding-bottom: 20px;
+  margin-top:70px;
+  display: block;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 100%; 
+  cursor: pointer; 
+  float: bottom;
+  display: block;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container big image */
+.container {
+  position: absolute;
+  display: block;
+  width: 30em;
+position: absolute;
+margin-left: 15em;
+bottom:5em;
+
+
+}
+
+/* Expanding image text */
+#imgtext {
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+  margin-top:-20px
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+/* product images ?*/
+
+
+
+
 .box1 {
 
   color: #ffff;
-  width: 600px;
-  height: 600px;
-  margin-left: 900px;
-margin-top: 40px;
-position:relative;}
+}
   
-
 h1 {
   font-size: 45px;
 }
