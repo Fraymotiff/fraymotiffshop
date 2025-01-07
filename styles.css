@@ -628,7 +628,7 @@ margin-top:140px;
 }
 
 .manual-btn{
-  border: 2px solid var(--main-color);
+  border: 2px solid #fff;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -640,7 +640,7 @@ margin-top:140px;
 }
 
 .manual-btn:hover{
-  background: var(--main-color);
+  background: var(--bg-color);
 }
 
 #radio1:checked ~ .first{
@@ -1141,13 +1141,13 @@ a {
   color: var(--second-color);
   display: flex;
  
- text-decoration: underline;
+ 
 }
 
 .txt1:hover{
   color: var(--second-color);
   display: flex;
- text-decoration: underline;
+ 
 }
 
 .grid {
