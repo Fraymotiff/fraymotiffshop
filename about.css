@@ -1382,3 +1382,36 @@ font-size: 20px;
     display: flex;
     flex-direction: column;
 }
+
+#socials{
+  color: #fff;
+font-size: 10em;
+justify-content: center;
+  cursor:pointer;
+  z-index: 100000;
+  color: #fff;
+  position:relative;
+  display:flex;
+  transition: 0.5 ease;
+  
+
+ 
+
+  }
+
+  #socials:hover{
+
+    color: var(--second-color);
+  }
+
+      
+.followus{
+  display:flex;
+  
+  margin-left: 15em;
+  font-size: 28px;
+  color: #fff;
+  font-family: 'Kdam Thmor Pro',sans-serif;
+  text-shadow: 0 0 5px #2b1055, 0 0 5px #0000FF;
+
+}
