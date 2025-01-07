@@ -1356,6 +1356,8 @@ font-size: 20px;
     width: 25em;
     display: flex;
     margin-left: 30em;
+    text-shadow: 0 0 5px #2b1055, 0 0 5px #0000FF;
+    
 }
 .textabout{
     display:flex;
@@ -1388,11 +1390,11 @@ font-size: 20px;
 font-size: 10em;
 justify-content: center;
   cursor:pointer;
-  z-index: 100000;
   color: #fff;
   position:relative;
   display:flex;
   transition: 0.5 ease;
+  text-shadow: 0 0 5px #2b1055, 0 0 5px #0000FF;
   
 
  
