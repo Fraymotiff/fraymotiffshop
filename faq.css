@@ -363,7 +363,8 @@ border-radius: 0.5rem;
 box-shadow :rgb(196, 35, 131);
 width: 140px;
 height: 10px;
-margin-left: -85px;
+margin-left: -13px;
+
 border: none;
 box-shadow: var(--second-color);
 }

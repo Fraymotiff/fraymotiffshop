@@ -187,7 +187,16 @@ transition: 0.2s;
 
 
 
+#icon{
+  background-color:#fff;
+  transition:1s;
 
+}
+#icon:hover{
+
+  color: var(--second-color)
+}
+  
 
 
 .btn{
@@ -363,7 +372,8 @@ border-radius: 0.5rem;
 box-shadow :rgb(196, 35, 131);
 width: 140px;
 height: 10px;
-margin-left: -85px;
+margin-left: -13px;
+
 border: none;
 box-shadow: var(--second-color);
 }
