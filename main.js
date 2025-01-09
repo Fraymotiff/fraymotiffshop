@@ -1,6 +1,16 @@
-const createFooter = () => {
-    let footer = document.querySelector('footer');
 
+
+    
+    
+    
+    
+    alert("Site under construction ");
+    
+    
+    
+    
+    
+    
     footer.innerHTML = `
     <div class="footer-content">
         <img src="img/light-logo.png" class="logo" alt="">
@@ -50,7 +60,11 @@ const createFooter = () => {
     </div>
     <p class="footer-credit">Clothing, Best apparels online store</p>
     `;
-}
+
 
 createFooter();
+
+
+// alert box//
+
 
